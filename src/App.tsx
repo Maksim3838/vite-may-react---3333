@@ -21,7 +21,9 @@ staleTime: 60* 1000
       <button onClick={()=> clikses((prevClikses) => prevClikses+1) }>+</button>
       {isLoading && <p>Loading...</p>}
       {isError && <p>Ooopss</p>}
-      <pre>{JSON.stringify(data, null, 2) }</pre>
+      <h1>{data?.name }</h1>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+      
     </>
   )
 }
